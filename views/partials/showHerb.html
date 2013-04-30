@@ -1,0 +1,22 @@
+<div class="row-fluid" ng-controller="showHerbCtrl">
+
+    <legend>Herb Details</legend>
+    <br/>
+
+    <div class="row">
+        <div class="span5 thumbnail" style="margin-left:30px">
+            <img ng-src="{{'pics/' + Herb.picture}}">
+        </div>
+        <div class="span5 thumbnail" style="margin-left:30px">
+            <h4>{{Herb.name}} <a href={{Herb.flickrlink}}>flickr</a> <h4/>
+                <h4>{{Herb.description}}</h4>
+
+                <div class="form-actions">
+                    <a class="btn" ng-click="openDialog()">Edit</a>
+                    <a ng-click="delete()" class="btn">Delete</a>
+                    <a href="#" class="btn">Recomend</a>
+                </div>
+        </div>
+    </div>
+</div>
+</div>

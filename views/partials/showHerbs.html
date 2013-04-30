@@ -1,0 +1,14 @@
+<div class="container">
+    <ul class="thumbnails">
+        <div ng-repeat="herb in herbs">
+            <li class="span3" style="margin: 30px 70px 0px">
+                <a href="{{'#/showHerb/' + herb._id}}" class="thumbnail" style="text-align: center;">
+                    <img ng-src="{{'pics/' + herb.picture}}" style="width:250px;height:200px">
+                    <h5>{{herb.name}}</h5>
+                </a>
+            </li>
+        </div>
+    </ul>
+    <pagination style="margin: 40px 0px 0px 40px" num-pages="noOfPages" current-page="currentPage"
+                on-Select-Page="setPage(page)"></pagination>
+</div>

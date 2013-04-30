@@ -1,0 +1,14 @@
+<br/>
+<div class="thumbnails">
+    <carousel interval="myInterval" style="height:200px">
+        <slide ng-repeat="slide in slides" active="slide.active">
+            <img ng-src="{{'pics/' + slide.picture}}" style="margin:auto;">
+
+            <div class="carousel-caption" style="position: relative">
+                <h4>{{slide.name}}</h4>
+                <h4>{{slide.description}}</h4>
+                <a href={{slide.flickrlink}}>flickr</a>
+            </div>
+        </slide>
+    </carousel>
+</div>

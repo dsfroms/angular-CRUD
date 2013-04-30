@@ -1,0 +1,26 @@
+<form name="form" class="form-vertical">
+
+    <div class="control-group" ng-class="{error: form.name.$invalid}" style="margin-left:30px">
+        <label class="control-label" for="name">name:</label>
+
+        <div class="controls">
+            <input type="text" ng-model="Herb.name" id="name">
+        </div>
+    </div>
+
+    <div class="control-group" ng-class="{error: form.description.$invalid}" style="margin-left:30px">
+        <label class="control-label" for="description">description:</label>
+
+        <div class="controls">
+            <textarea name="description" style="width: 90%;" rows="6" ng-model="Herb.description"
+                      id="description"></textarea>
+        </div>
+    </div>
+
+
+    <div class="form-actions">
+        <button class="btn btn-primary save" ng-click="save()">Submit</button>
+        <a ng-click="cancel()" class="btn">Cancel</a>
+    </div>
+</form>
+
